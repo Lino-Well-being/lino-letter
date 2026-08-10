@@ -6,7 +6,7 @@ Lino Well-being「人生のハンドルを取り戻すメールレター」の�
 ## 構成
 - `index.html` … LP本体（1ファイル完結・CSS埋め込み）
 - `images/` … ロゴ・プロフィール写真
-- `CNAME.pending` … DNS(ムームー)でCNAMEを設定したあと `CNAME` にリネームする
+- `CNAME` … 独自ドメイン letter.linowellbeing.com（ムームーDNSにCNAME設定済み・2026-08-10）
 
 ## 登録フォームの仕組み
 素のHTML formで my UTAGE の Worker に直接POSTしている。
