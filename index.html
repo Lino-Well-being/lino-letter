@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>人生のハンドルを取り戻すメールレター｜Lino Well-being</title>
+<meta name="description" content="流される毎日から、自分で選ぶ人生へ。自分の本音に気づくための問いを、暮らしの中で使える形でお届けする無料メールレターです。">
+<meta property="og:title" content="人生のハンドルを取り戻すメールレター">
+<meta property="og:description" content="流される毎日から、自分で選ぶ人生へ。自分の本音に気づくための問いを、暮らしの中で使える形でお届けする無料メールレターです。">
+<meta property="og:image" content="images/chiho.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="images/logo.png">
+<style>
+  :root{
+    --deep:#3f5c56;
+    --main:#6b8f86;
+    --cream:#f7f4ee;
+    --card:#fffdfa;
+    --ink:#3a3630;
+    --muted:#7d766c;
+    --line:#e4ded3;
+    --accent:#b08968;
+    --max:720px;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;
+    font-size:16.5px;
+    line-height:2;
+    letter-spacing:.02em;
+  }
+  img{max-width:100%;height:auto;display:block}
+  a{color:var(--deep)}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+
+  /* ---- hero ---- */
+  .hero{
+    background:linear-gradient(180deg,#3f5c56 0%,#55766e 100%);
+    color:#f4f1ea;
+    padding:44px 0 40px;
+    text-align:center;
+  }
+  .hero .logo{width:64px;margin:0 auto 18px;opacity:.95}
+  .hero .eyebrow{
+    margin:0 0 14px;
+    font-size:.82rem;
+    letter-spacing:.18em;
+    color:#c8d6d1;
+  }
+  .hero h1{
+    margin:0 0 10px;
+    font-size:1.62rem;
+    font-weight:600;
+    line-height:1.65;
+  }
+  .hero .sub{
+    margin:0;
+    font-size:1.02rem;
+    color:#dce6e2;
+  }
+
+  /* ---- sections ---- */
+  section{padding:44px 0}
+  section + section{border-top:1px solid var(--line)}
+  h2{
+    margin:0 0 24px;
+    font-size:1.2rem;
+    font-weight:600;
+    color:var(--deep);
+    line-height:1.7;
+  }
+  h2::before{
+    content:"";
+    display:block;
+    width:34px;
+    height:2px;
+    background:var(--accent);
+    margin-bottom:14px;
+  }
+  p{margin:0 0 1.5em}
+  p:last-child{margin-bottom:0}
+
+  .quotes{
+    margin:0 0 1.6em;
+    padding:22px 24px;
+    background:var(--card);
+    border-left:3px solid var(--main);
+    border-radius:0 8px 8px 0;
+  }
+  .quotes p{margin:0 0 .5em;color:var(--deep)}
+  .quotes p:last-child{margin-bottom:0}
+
+  ul.check{list-style:none;margin:0 0 1.5em;padding:0}
+  ul.check li{
+    position:relative;
+    padding:0 0 0 28px;
+    margin-bottom:.6em;
+  }
+  ul.check li::before{
+    content:"🌿";
+    position:absolute;
+    left:0;
+    top:0;
+    font-size:.9em;
+  }
+
+  .lead{font-size:1.05rem}
+  .center{text-align:center}
+  .muted{color:var(--muted);font-size:.9rem;line-height:1.9}
+
+  /* ---- profile ---- */
+  .profile{
+    display:flex;
+    gap:24px;
+    align-items:flex-start;
+    margin-bottom:1.6em;
+  }
+  .profile img{
+    width:150px;
+    flex:0 0 150px;
+    border-radius:10px;
+  }
+  .profile .name{margin:0 0 .3em;font-weight:600;color:var(--deep)}
+  .profile .role{margin:0;font-size:.9rem;color:var(--muted);line-height:1.9}
+  @media (max-width:520px){
+    .profile{flex-direction:column;align-items:center;text-align:center}
+    .profile img{width:180px;flex:none}
+  }
+
+  /* ---- form ---- */
+  .signup{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:30px 26px;
+    margin:0 auto;
+  }
+  .signup h2{text-align:center}
+  .signup h2::before{margin-left:auto;margin-right:auto}
+  form{display:grid;gap:14px;max-width:400px;margin:0 auto}
+  label{font-size:.9rem;color:var(--muted);margin-bottom:-8px}
+  input[type=text],input[type=email]{
+    width:100%;
+    padding:14px 15px;
+    font-size:16px;
+    font-family:inherit;
+    color:var(--ink);
+    background:#fff;
+    border:1px solid #d6cec2;
+    border-radius:8px;
+    line-height:1.5;
+  }
+  input:focus{outline:2px solid var(--main);outline-offset:1px;border-color:var(--main)}
+  button{
+    padding:16px;
+    font-size:1.02rem;
+    font-family:inherit;
+    font-weight:600;
+    color:#fff;
+    background:var(--deep);
+    border:0;
+    border-radius:8px;
+    cursor:pointer;
+    letter-spacing:.04em;
+  }
+  button:hover{background:#35504b}
+  .formnote{
+    margin:4px 0 0;
+    font-size:.83rem;
+    color:var(--muted);
+    line-height:1.85;
+    text-align:center;
+  }
+
+  .closing{
+    background:var(--card);
+    border-top:1px solid var(--line);
+    padding:44px 0;
+    text-align:center;
+  }
+  .closing p{color:var(--deep)}
+
+  footer{
+    background:#3f5c56;
+    color:#c8d6d1;
+    padding:26px 0;
+    text-align:center;
+    font-size:.85rem;
+    line-height:2;
+  }
+  footer a{color:#e3ece9}
+  footer .links{margin:0 0 8px}
+  footer .links a{margin:0 10px;white-space:nowrap}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <img class="logo" src="images/logo.png" alt="Lino Well-being">
+    <p class="eyebrow">Lino Well-being ｜ 無料メールレター</p>
+    <h1>人生のハンドルを<br>取り戻すメールレター</h1>
+    <p class="sub">流される毎日から、自分で選ぶ人生へ</p>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <section>
+    <p class="lead">ちゃんと頑張っている。<br>
+    家族のことも、仕事のことも、人間関係も。<br>
+    その時々で、できることを精一杯やってきた。</p>
+
+    <p>それなのに、ふとした瞬間に思うことはありませんか。</p>
+
+    <div class="quotes">
+      <p>「私は本当はどうしたいんだろう」</p>
+      <p>「このままの生き方でいいのかな」</p>
+      <p>「人に合わせることはできるのに、自分の本音がわからない」</p>
+      <p>「頑張っているのに、なぜか心が満たされない」</p>
+    </div>
+
+    <p>このメールレターは、そんな方が自分の内側にある声に気づき、流される人生から、自分で選ぶ人生へ戻っていくための無料メールレターです。</p>
+  </section>
+
+  <section>
+    <h2>こんな方へ</h2>
+    <ul class="check">
+      <li>人に合わせることが多く、自分の本音がわからなくなっている</li>
+      <li>今の生活に大きな不満はないのに、心のどこかが満たされない</li>
+      <li>やりたいことや進みたい方向が見えなくなっている</li>
+      <li>自分を責めることが多く、心が疲れている</li>
+      <li>もっと自分らしく生きたいけれど、何から始めればいいかわからない</li>
+      <li>誰かの正解ではなく、自分の答えを見つけたい</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>自分の人生なのに、なぜ流されてしまうのか</h2>
+
+    <p>私たちは日々、たくさんの役割の中で生きています。</p>
+
+    <p>母として。<br>
+    妻として。<br>
+    仕事をする人として。<br>
+    誰かの期待に応える人として。</p>
+
+    <p>その中で、いつの間にか「自分はどうしたいのか」を後回しにしてしまうことがあります。</p>
+
+    <p>本当は嫌だったこと。<br>
+    本当は言いたかったこと。<br>
+    本当は選びたかったこと。</p>
+
+    <p>それを置き去りにしたまま頑張り続けると、自分の気持ちがだんだん見えにくくなっていきます。</p>
+
+    <p>だから必要なのは、もっと頑張ることではありません。</p>
+
+    <p>一度立ち止まり、自分の本音に耳を傾ける時間です。</p>
+  </section>
+
+  <section>
+    <h2>このメールレターでお届けすること</h2>
+
+    <p>このメールレターでは、日々の暮らしの中で自分の心を見つめ直すヒントをお届けします。</p>
+
+    <ul class="check">
+      <li>自分の本音に気づくための問い</li>
+      <li>人に合わせすぎてしまう時の心の整え方</li>
+      <li>自分を責める思考に気づく視点</li>
+      <li>アドラー心理学やコーチングの考え方</li>
+      <li>子育てや人間関係に活かせる対話のヒント</li>
+      <li>流される人生から、自分で選ぶ人生へ戻るための小さな一歩</li>
+    </ul>
+
+    <p>難しい理論ではなく、日常の中で使える、地に足のついた内容をお届けします。</p>
+  </section>
+
+  <section>
+    <h2>私がこのメールレターを届けたい理由</h2>
+
+    <div class="profile">
+      <img src="images/chiho.jpg" alt="益田千穂">
+      <div>
+        <p class="name">益田 千穂</p>
+        <p class="role">Lino Well-being 主宰。<br>ライフ・コーチング／アドラー心理学。<br>35年勤めた会社を退職し、独立。</p>
+      </div>
+    </div>
+
+    <p>私は幼い頃から、生きる意味について考えることがありました。</p>
+
+    <p>自分は何のために生まれてきたのか。<br>
+    自分の存在には意味があるのか。<br>
+    そんな問いを、心のどこかに抱えて育ってきました。</p>
+
+    <p>高校生の頃、図書館でアルバイトをしていた時に心理学の本と出会い、アドラー心理学に触れました。</p>
+
+    <p>その考え方に出会った時、心の中にあったものが少しほどけたような感覚がありました。</p>
+
+    <p>どんな人にも尊さがあること。<br>
+    自分の意見や感情を大切にしていいこと。<br>
+    人と関わりながら、自分らしく生きる道はあること。</p>
+
+    <p>その後、心理学やコーチングの学びを日々の生活や子育てに取り入れる中で、答えは誰かに与えられるものではなく、自分の中に見つけていくものなのだと感じるようになりました。</p>
+
+    <p>このメールレターでは、あなたが自分の中にある答えに気づき、自分の人生のハンドルを少しずつ取り戻していくための言葉を届けていきます。</p>
+  </section>
+
+  <section>
+    <h2>登録すると受け取れるもの</h2>
+
+    <p>メールレターにご登録いただくと、次のような内容をお届けします。</p>
+
+    <ul class="check">
+      <li>自分の本音に気づくためのメール</li>
+      <li>心を整える問いかけ</li>
+      <li>人間関係や子育てに活かせる考え方</li>
+      <li>ライフ・コーチングの視点</li>
+      <li>自分らしい選択をするためのヒント</li>
+    </ul>
+
+    <p>自分を変えようと無理に頑張るのではなく、本来の自分に戻っていくための時間として読んでいただけたら嬉しいです。</p>
+  </section>
+
+  <section>
+    <div class="signup">
+      <h2>無料でメールレターを受け取る</h2>
+
+      <p class="center">流される人生から、自分で選ぶ人生へ。</p>
+
+      <p class="center">その一歩は、いきなり大きく変わることではありません。<br>
+      まずは、自分の心の声に気づくことから始まります。</p>
+
+      <form method="post" action="https://ml.chiho-m.workers.dev/signup">
+        <input type="hidden" name="list" value="lino">
+        <input type="hidden" name="scenario" value="handle">
+        <input type="hidden" name="source" value="lp-letter">
+
+        <label for="name">お名前（任意）</label>
+        <input id="name" type="text" name="name" autocomplete="name" placeholder="ちほ">
+
+        <label for="email">メールアドレス</label>
+        <input id="email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+
+        <button type="submit">無料で受け取る</button>
+
+        <p class="formnote">ご登録後、確認のメールをお送りします。<br>
+        メール内のリンクを押していただくと登録完了です。<br>
+        配信はいつでも解除できます。</p>
+      </form>
+    </div>
+  </section>
+
+</div>
+
+<div class="closing">
+  <div class="wrap">
+    <p>あなたの人生の答えは、誰かの中ではなく、あなた自身の中にあります。</p>
+    <p>人生のハンドルを、自分の手に取り戻す。<br>
+    その小さな一歩を、ここから一緒に始めていきましょう。</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p class="links">
+      <a href="https://www.linowellbeing.com/">Lino Well-being</a>
+      <a href="https://www.linowellbeing.com/privacypolicy/">プライバシーポリシー</a>
+      <a href="https://www.linowellbeing.com/tokusho/">特定商取引法に基づく表記</a>
+    </p>
+    <p>&copy; Lino Well-being</p>
+  </div>
+</footer>
+
+</body>
+</html>
